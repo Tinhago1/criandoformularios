@@ -1,0 +1,208 @@
+* {
+  margin: 0;   /*zerando todos elementos do navegador*/
+  padding: 0;
+  box-sizing: border-box; /*é usado para definir pelo width o tamanho maximo da caixa, usando o padding para aplicar o espao das margens dentro da caixa*/
+  
+  }
+
+  body, input, button, select, textarea{
+    font-family: Poppins;
+  }
+
+
+body{
+  font-family: Poppins;
+  background: #EFEFEF;
+}
+
+body::before{
+  content: "";
+  width: 100%;
+  height: 436px;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background: #535971;
+
+}
+
+.page{
+  width: 750px;
+  margin: auto;
+
+}
+
+header{
+width: 750px;
+height: auto;
+
+margin-top: 140px;
+
+
+}
+
+header h1{
+  color: #FFF;
+
+ font-family: Staatliches;
+ font-size: 48px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+
+ margin-bottom: 18px;
+}
+
+header p{
+  color: #FFF;
+
+ font-family: Poppins;
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+form{
+  border-radius: 20px 20px 0px 0px;
+  background: #FFF;
+  
+  min-height: 300px;
+
+  padding: 64px;
+  margin-top: 58px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.input-wrapper label{
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+
+}
+
+.input-wrapper label span{
+  color: #C1BCCC;
+
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset legend{
+  color: #535971;
+
+  font-family: Staatliches;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+
+  margin-bottom: 32px;
+ 
+}
+
+#nomes{
+  display: flex;
+  gap: 22px; /*distanciamente entre os 2 inputs*/
+}
+
+.input-wrapper input{
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #fafafc;
+
+  height: 56px;
+  width: 100%;
+  padding: 0 24px;
+
+  color: #4E4958;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 20px;
+}
+
+#mentoria1, #mentoria2 {  /*retirando a borda abaixo do legend, mudando alguns estilos conforme o projeto no figma*/
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+
+}
+
+
+.data-hora, .data-hora1 {
+  display: flex;
+}
+
+.input-wrapper.data {
+  width: 300px;
+  margin-right: 32px;
+
+}
+
+.input-wrapper.das {
+  margin-right: 10px; 
+}
+
+
+footer{
+  background: #535971;
+
+  height: 160px;   
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 52px 71px;
+
+  margin: 0 auto;
+  border-radius: 0px 0px 20px 20px;
+ 
+}
+
+
+footer .button{
+height: 55px;
+padding: 15px 40px;
+gap: 10px;
+
+border: none;
+border-radius: 20px;
+
+background: #ac0828;
+
+}
+
+footer .button:hover{
+  background: #79051c;
+  cursor: pointer;
+
+}
+footer button{
+  color: #FFF;
+
+  font-family: Staatliches;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
